@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Day3 Assignment</title>
+    </head>
+    <body>
+        <h3>Question1:</h3>
+        <p>Check in console</p>
+        <Script>
+          function check(num){
+              if(num%2==0){
+                  console.log("The number entered is "+num+" and the Number is even");
+              }
+              else{
+                console.log("The number entered is "+num+" and the Number is odd");
+              }
+          }
+          var n=prompt("Enter a number to check it is even(or)odd:");
+          check(n);
+        </Script>
+        <h3>Question2:</h3>
+        <p>Check in console</p>
+        <script>
+            var str=prompt("Enter a String contains OS name and its version:");
+            var res=str.split(" ");
+            console.log("The OS name is "+res[0]+" and version is "+res[1]);
+        </script>
+        <h3>Question3:</h3>
+        <p>Check in console</p>
+        <script>
+            var marks=prompt("Enter marks:");
+            switch(true){
+                case (marks>=90 && marks<=100):
+                    console.log(`Marks are ${marks} and grade is A`);
+                    break;
+                case (marks>=80 && marks<90):
+                    console.log(`Marks are ${marks} and grade is B`);
+                    break;
+                case (marks>=70 && marks<80):
+                    console.log(`Marks are ${marks} and grade is C`);
+                    break;
+                case (marks>=60 && marks<70):
+                    console.log(`Marks are ${marks} and grade is D`);
+                    break;
+                case (marks>=50 && marks<60):
+                    console.log(`Marks are ${marks} and grade is E`);
+                    break;
+                case (marks<50):
+                    console.log(`Marks are ${marks} and grade is F`);
+                    break;
+                default:
+                    console.log("Enter Valid marks");
+                    break;
+            }
+        </script>
+    </body>
+</html>
